@@ -16,7 +16,9 @@ Route::get('/', function () {
     \App\Post::create([
         'title'=>'testtitle',
         'content'=>'testcontent',
-        ]);        
+        ]);     
+    \App\Post::destroy(2);
+    \App\Post::destroy(3,5,7);    
 });
 
 
