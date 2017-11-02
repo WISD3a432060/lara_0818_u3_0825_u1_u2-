@@ -20,7 +20,10 @@ class CreatePostsTable extends Migration
             $table-> text('content');
             $table -> string('title',500)-> change();
             $table -> boolean('is_feature')-> default(false)-> after('content');
-                   
+            $post=new\App\Post();
+            $post‐>title='testtitle';
+            $post‐>content='testcontent';
+            $post‐>save();   
         });
         
     }

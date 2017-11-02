@@ -16,10 +16,6 @@ Route::get('/', function () {
     \App\Post::create([
         'title'=>'testtitle',
         'content'=>'testcontent',
-        post=new\App\Post();
-        post‐>title='testtitle';
-        post‐>content='testcontent';
-        post‐>save();   
         ]);        
 });
 
