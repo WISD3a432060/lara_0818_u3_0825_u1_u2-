@@ -22,7 +22,11 @@ class CreateUsersTable extends Migration
             $table->timestamps();
         });
     }
-
+    public function post()
+    {
+    return $this‐>belongsTo(Post::class);
+    }
+    
     /**
      * Reverse the migrations.
      *

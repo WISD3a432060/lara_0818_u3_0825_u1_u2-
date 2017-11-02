@@ -10,6 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+use App\Post;
 
 Route::get('/', function () {
     return view('welcome');
@@ -20,5 +21,7 @@ Route::get('/', function () {
     \App\Post::destroy(2);
     \App\Post::destroy(3,5,7);    
 });
+
+
 
 
