@@ -13,8 +13,7 @@ class AddIsFeatureInPostTable extends Migration
      */
     public function up()
     {
-        table -> string('title',500)-> change();
-        table -> boolean('is_feature')-> default(false)-> after('content');
+        
     }
 
     /**

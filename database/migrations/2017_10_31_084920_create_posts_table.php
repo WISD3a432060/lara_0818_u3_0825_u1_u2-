@@ -18,7 +18,9 @@ class CreatePostsTable extends Migration
             $table-> timestamps();
             $table-> string('title');
             $table-> text('content');
-            
+            $table -> string('title',500)-> change();
+            $table -> boolean('is_feature')-> default(false)-> after('content');
+                   
         });
         
     }
